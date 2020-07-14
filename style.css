@@ -23,8 +23,8 @@
     --font-micro: 14px;
   
     /* Font weight */
-    --weight-bold: 700;
-    --weight-semi-bold: 600;
+    --weight-bold: 900;
+    --weight-semi-bold: 700;
     --weight-regular: 400;
     /* Size */
   }
@@ -32,4 +32,38 @@
   /* Universal tags */
   * {
     box-sizing: border-box;
+    /* padding을 줬을 때 높이와 너비가  
+    그 패딩을 포함했을 때도 동일한 높이와 너비가 되도록*/
+  }
+  
+
+  /* Typography */
+
+h1 {
+    font-size: var(--font-large);
+    font-weight: var(--weight-bold);
+    color: var(--color-black);
+    margin: 16px 0px 0 0;
+    /* 위 오른쪽 밑 왼쪽*/
+  }
+  
+  h2 {
+    font-size: var(--font-medium);
+    font-weight: var(--weight-semi-bold);
+    color: var(--color-black);
+    margin: 8px 0px;
+  }
+  
+  h3 {
+    font-size: var(--font-regular);
+    font-weight: var(--weight-regular);
+    color: var(--color-black);
+    margin: 8px 0px;
+  }
+  
+  p {
+    font-size: var(--font-regular);
+    font-weight: var(--weight-regular);
+    color: var(--color-black);
+    margin: 4px 0px;
   }
