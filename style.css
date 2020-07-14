@@ -255,3 +255,24 @@ p {
 #skills {
     background-color: var(--color-yellow);
 }
+
+.skillset {
+    display: flex;
+    background-color: var(--color-light-grey);
+    color: var(--color-light-white);
+    margin: 25px 0;
+}
+
+.skillset__left {
+    flex-basis: 60%;
+    background-color: var(--color-dark-grey);
+}
+
+.skillset__right {
+    flex-basis: 40%;
+    background-color: var(--color-grey);
+}
+
+.skillset__title {
+    color: var(--color-white);
+}
