@@ -365,13 +365,45 @@ p {
 }
 
 .project {
+    position: relative;
     width: 280px;
     height: 250px;
-    margin: 20px;
-    background-color: #bdbdbd;
+    margin: 5px;
+    background-color: var(--color-white);
 }
 
 .project__img {
     max-width: 100%;
     max-height: 100% ;
+}
+
+.project__description {
+    position: absolute;
+    background-color: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* flex 만 하면 한줄에 다 보이니까.. */
+    flex-direction: column;
+    /* 중간정렬 */
+    justify-content: center;
+    opacity: 0.8;
+}
+
+.project__description h3 {
+    color: var(--color-white);
+}
+
+.project__description h3:after {
+    content: '';
+    width: 25px;
+    height: 2px;
+    background-color: var(--color-light-white);
+    display: block;
+    position: relative;
+    left: 50%;
+    margin-left: -12px;
+    margin-top: 5px;
 }
