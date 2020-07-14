@@ -192,3 +192,12 @@ p {
     margin-bottom: 16px;
     color: var(--color-blue);
 }
+
+.major__title,
+.major__description {
+  color: var(--color-dark-grey);
+}
+
+.major__description {
+    font-size: var(--font-small);
+}
