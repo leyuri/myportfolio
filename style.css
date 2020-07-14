@@ -370,6 +370,9 @@ p {
     height: 250px;
     margin: 5px;
     background-color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .project__img {
@@ -389,6 +392,11 @@ p {
     flex-direction: column;
     /* 중간정렬 */
     justify-content: center;
+    opacity: 0;
+    transition: all var(--animation-duration) ease;
+}
+/* 프로젝트에 마우스가 올라왔을 때 디크립션을 보여주기 위해*/
+.project:hover .project__description {
     opacity: 0.8;
 }
 
