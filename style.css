@@ -57,6 +57,12 @@ ul {
     padding-left: 0;
 }
 
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
 
 /* Typography */
 
@@ -133,3 +139,25 @@ p {
     padding: 40px;
     text-align: center;
 }
+
+.home__avatar {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid var(--color-light-white)
+}
+
+.home__title,
+.home__description {
+    color: var(--color-white);
+}
+
+.home__contact {
+    border: 2px solid var(--color-black);
+    margin-top: 15px;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    font-weight: var(--weight-semi-bold);
+    position: relative;
+    transition: 0.5s;
+  }
