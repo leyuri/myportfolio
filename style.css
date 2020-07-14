@@ -160,4 +160,13 @@ p {
     font-weight: var(--weight-semi-bold);
     position: relative;
     transition: 0.5s;
-  }
+}
+
+/* Section */
+
+.section {
+    padding: 50px;
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+}
