@@ -29,7 +29,7 @@
     --weight-regular: 400;
     
     /* Size */
-    --size-border-radius: 4px
+    --size-border-radius: 4px;
 
     /* Animation */
     --animation-duration: 350ms
@@ -309,4 +309,49 @@ p {
 
 .tools, .etc{
     padding: 20px;
+}
+
+/* Work */
+
+.work__categories {
+    margin: 30px;
+}
+.category__btn {
+    border: 1px solid var(--color-dark-white);
+    border-radius: var(--size-border-radius);
+    font-size: var(--font-regular);
+    margin: 3px 0px;
+    padding: 8px 48px; 
+    text-transform: uppercase;
+}
+
+.category__btn.active,
+.category__btn:hover {
+    background-color: var(--color-light-green);
+    color: var(--color-white);
+}
+
+.category__btn.active .category__count,
+.category__btn:hover .category__count {
+    opacity: 1;
+    top: 0;
+}
+
+.category__count {
+    background-color: var(--color-teal);
+    border-radius: 50%;
+    color: var(--color-light-white);
+    width: 20px;
+    height: 20px;    
+    display: inline-block;
+    line-height: 20px;
+    margin-left: 2px;
+
+    position: relative;
+    top: -20px;
+    left: 4px;
+
+    /* 평소에는 숫자가 보이지 않도록 만들어줌 */
+    opacity: 0;
+    transition: all var(--animation-duration) ease;
 }
