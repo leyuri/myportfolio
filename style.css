@@ -170,3 +170,25 @@ p {
     max-width: 1000px;
     margin: auto;
 }
+
+/* About */
+.about__majors {
+    display: flex;
+    justify-content: space-around;
+    margin: 70px 0px;
+    /* 위아래 양옆 */
+}
+
+.major__icon {
+    width: 170px;
+    height: 170px;
+    /* 높이만큼 지정하면 자동으로 중간에 위치되어있음 */
+    line-height: 170px;
+    font-size: 70px;
+    /* background-color: yellow; */
+    margin: auto;
+    border: 1px solid var(--color-blue);
+    border-radius: 50%;
+    margin-bottom: 16px;
+    color: var(--color-blue);
+}
