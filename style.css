@@ -29,15 +29,33 @@
     /* Size */
   }
   
-  /* Universal tags */
-  * {
-    box-sizing: border-box;
-    /* padding을 줬을 때 높이와 너비가  
-    그 패딩을 포함했을 때도 동일한 높이와 너비가 되도록*/
-  }
+/* Universal tags */
+* {
+box-sizing: border-box;
+/* padding을 줬을 때 높이와 너비가  
+그 패딩을 포함했을 때도 동일한 높이와 너비가 되도록*/
+}
   
+body {
+    margin: 0;
+    /* body 에 쓸데없는 마진 제거 */
+    font-family: 'Roboto', sans-serif;
+    cursor: default;
+    /* cursor가 텍스트에 올라가도 기본값 지정*/
+}
 
-  /* Typography */
+a {
+    text-decoration: none;
+    color: var(--color-white)
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+/* Typography */
 
 h1 {
     font-size: var(--font-large);
@@ -47,23 +65,49 @@ h1 {
     /* 위 오른쪽 밑 왼쪽*/
   }
   
-  h2 {
+h2 {
     font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
     color: var(--color-black);
     margin: 8px 0px;
-  }
+}
   
-  h3 {
+h3 {
     font-size: var(--font-regular);
     font-weight: var(--weight-regular);
     color: var(--color-black);
     margin: 8px 0px;
-  }
+}
   
-  p {
+p {
     font-size: var(--font-regular);
     font-weight: var(--weight-regular);
     color: var(--color-black);
     margin: 4px 0px;
-  }
+}
+
+/* Navbar */
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-orange);
+    /* 수직 중간 정렬하기 위해..현재 중심은 수평이니 */
+    align-items: center;
+    color: var(--color-white);
+    padding: 16px;
+}
+
+.navbar__menu {
+    display: flex;
+}
+
+.navbar__logo {
+    font-size: var(--font-medium);
+    font-weight: var(--weight-semi-bold);
+}
+
+.navbar__menu__item {
+    padding: 8px 12px;
+    margin: 0 4px;
+}
