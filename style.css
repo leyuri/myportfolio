@@ -256,6 +256,10 @@ p {
     background-color: var(--color-yellow);
 }
 
+.skill{
+    margin-bottom: 20px;
+}
+
 .skillset {
     display: flex;
     background-color: var(--color-light-grey);
@@ -266,6 +270,7 @@ p {
 .skillset__left {
     flex-basis: 60%;
     background-color: var(--color-dark-grey);
+    padding: 25px 30px;
 }
 
 .skillset__right {
@@ -275,4 +280,33 @@ p {
 
 .skillset__title {
     color: var(--color-white);
+}
+
+.skill_description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill__bar {
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-grey);
+}
+
+.skill__value {
+    width: 70%;
+    height: 3px;
+    background-color: var(--color-orange);
+}
+
+.etc {
+    background-color: var(--color-light-grey);
+}
+
+.tools {
+    background-color: var(--color-grey);
+}
+
+.tools, .etc{
+    padding: 20px;
 }
