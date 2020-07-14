@@ -355,3 +355,23 @@ p {
     opacity: 0;
     transition: all var(--animation-duration) ease;
 }
+
+.work__projects {
+    display: flex;
+    /* 아이템이 꽉 차면 자동으로 줄바꿈할 수 있도록 */
+    flex-wrap: wrap;
+    /* 중간정렬 */
+    justify-content: center;
+}
+
+.project {
+    width: 280px;
+    height: 250px;
+    margin: 20px;
+    background-color: #bdbdbd;
+}
+
+.project__img {
+    max-width: 100%;
+    max-height: 100% ;
+}
