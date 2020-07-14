@@ -213,3 +213,35 @@ p {
     font-size: var(--font-small);
 }
 
+.education {
+    display: flex;
+    align-items: center;
+}
+
+.job_education {
+    margin: 0 16px;
+    text-align: left;
+}
+
+.education__logo {
+    width: 80px;
+    height: 80px;
+}
+
+.education__logo2 {
+    width: 80px;
+    height: 40px;
+}
+
+.education__name,
+.education__period {
+    color: var(--color-light-grey);
+}
+
+.education__name {
+    font-size: var(--font-small);
+}
+
+.education__period {
+    font-size: var(--font-micro);
+}
