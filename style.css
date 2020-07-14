@@ -125,3 +125,11 @@ p {
 .navbar__menu__item:hover {
     background-color: var(--color-green);
 }
+
+/* Home */
+
+#home {
+    background: url('images/home-background2.png') center/cover no-repeat;
+    padding: 40px;
+    text-align: center;
+}
