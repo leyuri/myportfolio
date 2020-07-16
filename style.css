@@ -417,3 +417,48 @@ p {
     margin-left: -12px;
     margin-top: 5px;
 }
+
+/* Testimonials */
+#testimonials {
+    background-color: var(--color-light-white);
+}
+
+.testimonials {
+    margin: 40px;
+}
+
+.testimonial {
+    display: flex;
+    margin: 20px;
+}
+
+.testimonial__avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 12px;
+}
+
+/* .testimonial__avatar:nth-child(ood){
+    margin-right: 40px;
+}
+
+.testimonial__avatar:nth-child(even){
+    margin-right: 40px;
+} */
+
+
+.testimonial__comment {
+    padding: 20px;
+    background-color: var(--color-white);
+    border-radius: var(--size-border-radius);
+
+} 
+
+.testimonial__comment p {
+    color: var(--color-grey);
+}
+
+.testimonial__comment a {
+    color: var(--color-green);
+}
