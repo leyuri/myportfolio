@@ -6,6 +6,7 @@
     --color-dark-white: #bdbdbd;
     --color-green: #388e3c;
     --color-light-green: #6abf69;
+    --color-dark-green: #186A3B;
     --color-teal: #00796b;
     --color-dark-pink: #ff6863;
     --color-dark-grey: #4d4d4d;
@@ -99,15 +100,23 @@ p {
 }
 
 /* Navbar */
-
+/* var(--color-light-green) */
 #navbar {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-light-green);
+    background-color: transparent;
     /* 수직 중간 정렬하기 위해..현재 중심은 수평이니 */
     align-items: center;
     color: var(--color-white);
     padding: 16px;
+    transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--dark {
+    background-color: var(--color-dark-green) ;
+    padding: 8px;
 }
 
 .navbar__menu {
@@ -151,6 +160,7 @@ p {
 #home {
     background: url('images/home-background2.png') center/cover no-repeat;
     padding: 40px;
+    padding-top: 120px;
     text-align: center;
 }
 
@@ -167,7 +177,7 @@ p {
 }
 
 .home__contact {
-    border: 2px solid var(--color-black);
+    /* border: 2px solid var(--color-black); */
     margin-top: 15px;
     padding: 8px 20px;
     text-transform: uppercase;
@@ -477,7 +487,7 @@ p {
 /* Contact */
 
 #contact {
-    background-color: var(--color-light-green);
+    background-color: #7E5109 ;
 }
 
 .contact__title,
