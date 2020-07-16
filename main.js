@@ -12,4 +12,21 @@ document.addEventListener('scroll', () => {
     } else {
         navbar.classList.remove('navbar--dark');
     }
-})
+});
+
+// 메뉴를 클릭할시 해당 섹션으로 이동
+const navbarMenu = document.querySelector('.navbar__menu');
+navbarMenu.addEventListener('click', (e) => {
+    console.log(e.target.dataset.link);
+    const target = e.target;
+    // undefined인 경우
+    const link = target.dataset.link;
+    if (link == null) {
+        return;
+    } 
+    // 링크가 있는 경우에만 수행할 수 있도록
+    console.log(e.target.dataset.link);
+    const scrollTo = document.querySelector(link);
+    scrollTo.scrollIntoView({behavior: "smooth", block: "end"});
+
+});
