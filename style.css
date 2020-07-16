@@ -114,6 +114,7 @@ p {
     display: flex;
 }
 
+
 .navbar__logo {
     font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
@@ -127,12 +128,22 @@ p {
 }
 
 .navbar__menu__item.active {
-    border: 2px solid var(--color-white);
+    border: 2px ;
 
 }
 
 .navbar__menu__item:hover {
     background-color: var(--color-green);
+}
+
+.navbar__toggle-btn {
+    /* 문서의 원래 위치와 상관없이 위치를 지정할 수 있음 */
+    position: absolute;
+    top: 18px;
+    right: 32px;
+    font-size: 24px;
+    /* 화면이 클 때는 보이지 않도록 */
+    display: none;
 }
 
 /* Home */
@@ -369,7 +380,7 @@ p {
     width: 280px;
     height: 250px;
     margin: 5px;
-    background-color: var(--color-white);
+    background-color: var(--color-light-white);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -489,4 +500,43 @@ p {
     transform: scale(1.1);
     color: var(--color-green);
     transition: all var(--animation-duration) ease;
+}
+
+/*  media는 스크린 사이즈가 작을 때에만 적용되는 스타일링*/
+@media screen and (max-width:768px) {
+    .navbar__toggle-btn {
+        display: block
+    }
+
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar__menu{
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .about__majors {
+        flex-direction: column;
+    }
+    
+    .major {
+        margin: 10px;
+    }
+    .skillset {
+        flex-direction: column;
+    }
+    .project {
+        flex-grow: 1;
+    }
+    .testimonial__avatar {
+        width: 80px;
+        height: 80px;
+    }
+    /* .testimonial {
+        flex-direction: column;
+    } */
 }
