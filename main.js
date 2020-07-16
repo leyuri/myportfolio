@@ -5,7 +5,7 @@ const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
     // console.log(window.scrollY);
-    console.log(`navbarHeight : ${navbarHeight}`);
+    // console.log(`navbarHeight : ${navbarHeight}`);
 
     if(window.scrollY > navbarHeight) {
         navbar.classList.add('navbar--dark');
@@ -34,7 +34,18 @@ contactBtn.addEventListener('click', (e) => {
     scrollIntoView('#contact');
 })
 
+
+// 스크롤할 때 투명하게 1 -> 0.5 -> 0
+const home = document.querySelector('.home__container');
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll', () => {
+  home.style.opacity = 1 - window.scrollY / homeHeight;
+});
+
+
 function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior: "smooth", block: "end"});
 }
+
+
