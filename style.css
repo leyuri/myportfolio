@@ -483,10 +483,10 @@ p {
 .contact__link {
     font-size: var(--font-medium);
     margin: 20px 0;
-    transition: all var(--animation-duration) ease;
 }
 
 .contact__link i:hover {
     transform: scale(1.1);
     color: var(--color-green);
+    transition: all var(--animation-duration) ease;
 }
