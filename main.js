@@ -48,4 +48,14 @@ function scrollIntoView(selector) {
     scrollTo.scrollIntoView({behavior: "smooth", block: "end"});
 }
 
+// 스크롤할 때 버튼이 나타나게
+
+const arrowUp = document.querySelector('.arrow-up')
+document.addEventListener('scroll', () => {
+    if(window.scrollY > homeHeight/2 ) {
+        arrowUp.classList.add('visible');
+    } else {
+        arrowUp.classList.remove('visible');
+    }
+})
 

@@ -525,7 +525,12 @@ p {
     color: var(--color-white);
     background-color: var(--color-dark-green);
     border-radius: 60%;
+    display: none;
 
+}
+
+.arrow-up.visible {
+    display: block;
 }
 
 /*  media는 스크린 사이즈가 작을 때에만 적용되는 스타일링*/
