@@ -25,16 +25,16 @@ navbarMenu.addEventListener('click', (e) => {
         return;
     } 
     // 링크가 있는 경우에만 수행할 수 있도록
-    console.log(e.target.dataset.link);
-    const scrollTo = document.querySelector(link);
-    scrollTo.scrollIntoView({behavior: "smooth", block: "end"});
-
+    scrollIntoView(link);
 });
 
 // contact me 버튼을 눌렀을 경우 contact section으로 이동
 const contactBtn = document.querySelector('.home__contact');
 contactBtn.addEventListener('click', (e) => {
-    console.log(e.target.dataset.link);
-    const scrollTo = document.querySelector('#contact');
-    scrollTo.scrollIntoView({behavior: "smooth", block: "end"});
+    scrollIntoView('#contact');
 })
+
+function scrollIntoView(selector) {
+    const scrollTo = document.querySelector(selector);
+    scrollTo.scrollIntoView({behavior: "smooth", block: "end"});
+}
