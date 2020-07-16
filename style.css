@@ -513,6 +513,21 @@ p {
     transition: all var(--animation-duration) ease;
 }
 
+
+/* Scroll */
+.arrow-up {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+    color: var(--color-white);
+    background-color: var(--color-dark-green);
+    border-radius: 60%;
+
+}
+
 /*  media는 스크린 사이즈가 작을 때에만 적용되는 스타일링*/
 @media screen and (max-width:768px) {
     .navbar__toggle-btn {
