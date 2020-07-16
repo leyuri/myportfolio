@@ -68,17 +68,23 @@ workBtnContainer.addEventListener('click', (e) => {
     if(filter == null) {
         return;
     } 
-    
-    console.log(filter);
-    projects.forEach((project) => {
-        console.log(project.dataset.type);
 
-        if(filter ==='*' || filter === project.dataset.type){
-            project.classList.remove('invisible');
-        } else {
-            project.classList.add('invisible')
-        }
-    })
+    projectContainer.classList.add('anim-out');
+
+
+    // opacity 가 계속 0으로 남아있기 때문에 제거해준다
+    setTimeout(() => {
+        projects.forEach((project) => {
+            console.log(project.dataset.type);
+    
+            if(filter ==='*' || filter === project.dataset.type){
+                project.classList.remove('invisible');
+            } else {
+                project.classList.add('invisible')
+            }
+        });
+        projectContainer.classList.remove('anim-out');
+    }, 300);
 })
 
 function scrollIntoView(selector) {
