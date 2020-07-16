@@ -17,7 +17,7 @@ document.addEventListener('scroll', () => {
 // 메뉴를 클릭할시 해당 섹션으로 이동
 const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', (e) => {
-    console.log(e.target.dataset.link);
+    // console.log(e.target.dataset.link);
     const target = e.target;
     // undefined인 경우
     const link = target.dataset.link;
@@ -30,3 +30,11 @@ navbarMenu.addEventListener('click', (e) => {
     scrollTo.scrollIntoView({behavior: "smooth", block: "end"});
 
 });
+
+// contact me 버튼을 눌렀을 경우 contact section으로 이동
+const contactBtn = document.querySelector('.home__contact');
+contactBtn.addEventListener('click', (e) => {
+    console.log(e.target.dataset.link);
+    const scrollTo = document.querySelector('#contact');
+    scrollTo.scrollIntoView({behavior: "smooth", block: "end"});
+})
