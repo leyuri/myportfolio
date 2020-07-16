@@ -528,12 +528,13 @@ p {
     /* display를 쓰면 완전히 없어지기 때문에 opacity로 대체 */
     opacity: 0;
     transition: opacity 300ms ease-in;
-    /* 버튼이 안보일 때는 커서 사용하지 못하도록 */
+    /* 버튼이 안보일 때는 커서를 사용하지 못하도록 */
     pointer-events: none;
 }
 
 .arrow-up.visible {
     opacity: 1;
+    pointer-events: auto;
 }
 
 /*  media는 스크린 사이즈가 작을 때에만 적용되는 스타일링*/

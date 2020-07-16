@@ -59,3 +59,7 @@ document.addEventListener('scroll', () => {
     }
 })
 
+// arrow-up 버튼 클릭시 위로 이동
+arrowUp.addEventListener('click', () => {
+    scrollIntoView('#home');
+})
