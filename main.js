@@ -69,6 +69,17 @@ workBtnContainer.addEventListener('click', (e) => {
         return;
     } 
 
+    // 새로 클릭된
+
+    const active = document.querySelector('.category__btn.selected');
+    active.classList.remove('selected');
+
+    const target = 
+        // 클릭된게 버튼이면 그대로 e.target 사용, 아닐 경우(span), span의 parentNode는 button임
+        e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+    target.classList.add('selected')
+
+
     projectContainer.classList.add('anim-out');
 
 
