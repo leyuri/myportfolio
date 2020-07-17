@@ -14,6 +14,8 @@ document.addEventListener('scroll', () => {
     }
 });
 
+
+
 // 메뉴를 클릭할시 해당 섹션으로 이동
 const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click', (e) => {
@@ -27,6 +29,13 @@ navbarMenu.addEventListener('click', (e) => {
     // 링크가 있는 경우에만 수행할 수 있도록
     scrollIntoView(link);
 });
+
+// 모바일 스크린일 때 Navbar toglle (반응형 위해..)
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
+});
+
 
 // contact me 버튼을 눌렀을 경우 contact section으로 이동
 const contactBtn = document.querySelector('.home__contact');
