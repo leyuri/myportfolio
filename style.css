@@ -130,6 +130,13 @@ p {
     
 }
 
+.navbar__menu__item.active:hover {
+    border: 1px solid white;
+    border-radius: var(--size-border-radius);
+    /* background-color: var(--color-green); */
+    
+}
+
 .navbar__menu__item:hover {
     border: 1px solid white;
     border-radius: var(--size-border-radius);
@@ -184,13 +191,20 @@ p {
 }
 
 .home__contact {
-    /* border: 2px solid var(--color-black); */
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
     margin-top: 15px;
     padding: 8px 20px;
     text-transform: uppercase;
     font-weight: var(--weight-semi-bold);
+    border-radius: var(--size-border-radius);
     position: relative;
     transition: 0.5s;
+    background-color: transparent;
+}
+
+.home__contact:hover {
+    background-color: var(--color-green);
 }
 
 /* Section */
