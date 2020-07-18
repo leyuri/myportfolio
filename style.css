@@ -602,6 +602,10 @@ p {
         display: block;
     }
 
+    .section {
+        padding: 20px;
+    }
+
 
     .about__majors {
         flex-direction: column;
