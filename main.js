@@ -4,16 +4,12 @@
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
-    // console.log(window.scrollY);
-    // console.log(`navbarHeight : ${navbarHeight}`);
-
-    if(window.scrollY > navbarHeight) {
-        navbar.classList.add('navbar--dark');
-    } else {
-        navbar.classList.remove('navbar--dark');
-    }
+  if (window.scrollY > navbarHeight) {
+    navbar.classList.add('navbar--dark');
+  } else {
+    navbar.classList.remove('navbar--dark');
+  }
 });
-
 
 
 // 메뉴를 클릭할시 해당 섹션으로 이동
@@ -26,6 +22,7 @@ navbarMenu.addEventListener('click', (e) => {
     if (link == null) {
         return;
     } 
+    navbarMenu.classList.remove('open');
     // 링크가 있는 경우에만 수행할 수 있도록
     scrollIntoView(link);
 });

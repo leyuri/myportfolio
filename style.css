@@ -114,7 +114,6 @@ p {
     z-index: 1;
 }
 
-
 .navbar__logo {
     font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
@@ -152,7 +151,7 @@ p {
 
 #navbar.navbar--dark {
     background-color: var(--color-dark-green) ;
-    padding: 8px;
+    padding: 35px;
     z-index: 99;
 }
 
