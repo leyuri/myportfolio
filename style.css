@@ -441,18 +441,18 @@ p {
 }
 
 .project__description h3 {
-    color: var(--color-white);
+    color: var(--color-orange);
 }
 
 .project__description h3:after {
     content: '';
-    width: 25px;
+    width: 150px;
     height: 2px;
     background-color: var(--color-light-white);
     display: block;
     position: relative;
     left: 50%;
-    margin-left: -12px;
+    transform: translate(-50%);
     margin-top: 5px;
 }
 
