@@ -109,7 +109,7 @@ p {
     color: var(--color-white);
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
+    padding: 0px 10px;
     transition: all var(--animation-duration) ease-in-out;
     z-index: 1;
 }
@@ -151,7 +151,6 @@ p {
 
 #navbar.navbar--dark {
     background-color: var(--color-dark-green) ;
-    padding: 35px;
     z-index: 99;
 }
 
