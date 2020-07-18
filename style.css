@@ -364,6 +364,7 @@ p {
     font-size: var(--font-regular);
     margin: 3px 0px;
     padding: 8px 48px; 
+    width: 200px;
     text-transform: uppercase;
 }
 
@@ -622,6 +623,8 @@ p {
 
     .about__majors {
         flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 0px;
     }
     
     .major {
