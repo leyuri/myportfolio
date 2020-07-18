@@ -554,9 +554,9 @@ p {
     position: fixed;
     bottom: 50px;
     right: 50px;
-    width: 70px;
-    height: 70px;
-    font-size: 50px;
+    width: 60px;
+    height: 60px;
+    font-size: var(--font-medium);
     color: var(--color-white);
     background-color: var(--color-dark-green);
     border-radius: 60%;
@@ -617,10 +617,17 @@ p {
     }
 
     .home__avatar {
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
     }
 
+    .arrow-up {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 40px;
+        height: 40px;
+    }
 
     .about__majors {
         flex-direction: column;
