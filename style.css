@@ -573,6 +573,14 @@ p {
 
 /*  media는 스크린 사이즈가 작을 때에만 적용되는 스타일링*/
 @media screen and (max-width:768px) {
+    :root {
+    /* Font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+    }
     .navbar__toggle-btn {
         display: block;
     }
