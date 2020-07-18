@@ -606,6 +606,11 @@ p {
         padding: 20px;
     }
 
+    .home__avatar {
+        width: 250px;
+        height: 250px;
+    }
+
 
     .about__majors {
         flex-direction: column;
