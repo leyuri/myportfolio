@@ -172,7 +172,7 @@ p {
 /* Home */
 
 #home {
-    background: url('images/home-background2.png') center/cover no-repeat;
+    background: url('images/home-background2-1.png') center/cover no-repeat;
     padding: 40px;
     padding-top: 120px;
     text-align: center;
@@ -613,6 +613,7 @@ p {
 
     .section {
         padding: 20px;
+        padding-top: 40px;
     }
 
     .home__avatar {
