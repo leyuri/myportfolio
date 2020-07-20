@@ -351,6 +351,7 @@ p {
 
 .tools, .etc{
     padding: 20px;
+    padding-bottom: 32px;
 }
 
 /* Work */
