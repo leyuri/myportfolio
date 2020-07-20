@@ -50,19 +50,19 @@ document.addEventListener('scroll', () => {
 
 // 스크롤할 때 버튼이 나타나게
 
-const arrowUp = document.querySelector('.arrow-up')
-document.addEventListener('scroll', () => {
-    if(window.scrollY > homeHeight/2 ) {
-        arrowUp.classList.add('visible');
-    } else {
-        arrowUp.classList.remove('visible');
-    }
-})
+// const arrowUp = document.querySelector('.arrow-up')
+// document.addEventListener('scroll', () => {
+//     if(window.scrollY > homeHeight/2 ) {
+//         arrowUp.classList.add('visible');
+//     } else {
+//         arrowUp.classList.remove('visible');
+//     }
+// })
 
 // arrow-up 버튼 클릭시 위로 이동
-arrowUp.addEventListener('click', () => {
-    scrollIntoView('#home');
-})
+// arrowUp.addEventListener('click', () => {
+//     scrollIntoView('#home');
+// })
 
 // projects
 const workBtnContainer = document.querySelector('.work__categories');
