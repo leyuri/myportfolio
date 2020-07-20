@@ -431,6 +431,8 @@ p {
 .project__img {
     max-width: 100%;
     max-height: 100% ;
+    padding: 10px;
+
 }
 
 .project__description {
@@ -448,6 +450,10 @@ p {
     opacity: 0;
     transition: all var(--animation-duration) ease;
     transform: translateY(12px);
+}
+
+.project__description span {
+    padding: 0px 30px;
 }
 /* 프로젝트에 마우스가 올라왔을 때 디크립션을 보여주기 위해*/
 .project:hover .project__description {
